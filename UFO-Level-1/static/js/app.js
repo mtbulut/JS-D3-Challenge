@@ -1,9 +1,11 @@
 const input = d3.select("input")
 const button = d3.select("button")
+const table = d3.select("body").append("table") 
 
 const handler = function() {   
-    let filterCond = input.property("values")
-    const table = d3.select("body").append("table")  
+    let filterCond = input.property("value")
+    
+    // table.html("")
 
     const headerRow = table.append("thead").append("tr")
     headerRow.append("th").text("date/time")
