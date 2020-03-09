@@ -2,10 +2,11 @@ const input = d3.select("input")
 const button = d3.select("button")
 const table = d3.select("body").append("table") 
 
-const handler = function() {   
+
+const handler = function() {  
+    // d3.event.preventDefault() 
     let filterCond = input.property("value")
-    
-    // table.html("")
+    // d3.select("table").remove()
 
     const headerRow = table.append("thead").append("tr")
     headerRow.append("th").text("date/time")
@@ -17,6 +18,7 @@ const handler = function() {
     headerRow.append("th").text("comment")
 
     const tbody = table.append("tbody")
+    d3.select("tbody").remove()
 
     data.filter(dataRow => dataRow.datetime === filterCond).forEach(dataRow => {
         let row = tbody.append('tr')
