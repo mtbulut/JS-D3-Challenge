@@ -1,3 +1,16 @@
+const dateIn = d3.select("#datetime")
+const cityIn = d3.select("#city")
+const stateIn = d3.select("#state")
+const countryIn = d3.select("#country")
+const shapeIn = d3.select("#shape")
+
+const button = d3.select("button")
+
+
+
+
+
+
 const input = d3.select("input")
 const button = d3.select("button")
 
