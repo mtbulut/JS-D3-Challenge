@@ -10,9 +10,10 @@ body {
   margin: 0;
 }
 
-tr:nth-child(even) {
-  background-color: #bc5acf;
+tbody tr:nth-child(odd) {
+  background-color: rgb(190, 70, 190);
 }
+
 /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
 .wrapper {
   position: relative;

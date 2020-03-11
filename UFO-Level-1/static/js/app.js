@@ -20,6 +20,7 @@ const handler = function() {
     
 
     const tbody = table.append("tbody")
+    
     d3.select("tbody").remove()
     
 
